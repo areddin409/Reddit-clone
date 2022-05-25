@@ -21,17 +21,17 @@ export default NextAuth({
   //   }),
   // ],
   // Configure other options
-  session: {
-    jwt: true,
-  },
-  pages: {
-    callback: '/api/auth/callback',
-    logout: '/api/auth/logout',
-    providers: {
-      // Enable the Reddit provider
-      reddit: true,
-      // Enable the Google provider
-      google: true,
-    },
-  },
+  // session: {
+  //   jwt: true,
+  // },
+  // pages: {
+  //   callback: '/api/auth/callback',
+  //   logout: '/api/auth/logout',
+  //   providers: {
+  //     // Enable the Reddit provider
+  //     reddit: true,
+  //     // Enable the Google provider
+  //     google: true,
+  //   },
+  // },
 })

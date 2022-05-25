@@ -24,8 +24,6 @@ function Header() {
   const { data: session } = useSession()
   const [menuOpen, setMenuOpen] = useState<boolean>(false)
 
-  console.log(session)
-
   return (
     <div className="sticky top-0 z-50 flex bg-white px-4 py-2 shadow-sm">
       <div className="relative h-10 w-20 flex-shrink-0 cursor-pointer">
@@ -53,12 +51,12 @@ function Header() {
         <button hidden type="submit" className=""></button>
       </form>
       {menuOpen ? (
-        <div className="ml-5 mr-2 flex items-center">
+        <div className=" ml-5 mr-2 flex items-center">
           <XIcon
             onClick={() => setMenuOpen(!menuOpen)}
             className="icon text-gray-500 lg:hidden"
           />
-          <div className="absolute top-10 right-5 items-center rounded-lg border border-gray-200 bg-gray-50 px-2 py-1 text-gray-500 lg:hidden">
+          <div className="absolute  top-10 right-5 items-center rounded-lg border border-gray-200 bg-gray-50 px-2 py-1 text-gray-500 lg:hidden">
             <div className="flex flex-col items-center">
               {session ? (
                 <div className="flex cursor-pointer flex-col items-center">
@@ -108,7 +106,7 @@ function Header() {
         <SparklesIcon className="icon" />
         <GlobeIcon className="icon" />
         <VideoCameraIcon className="icon" />
-        <hr className="h-10 border border-orange-200" />
+        <hr className="h-10 border border-orange-100" />
         <ChatIcon className="icon" />
         <PlusIcon className="icon" />
         <BellIcon className="icon" />
