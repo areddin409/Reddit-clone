@@ -9,4 +9,12 @@
   .menu-icon {
     @apply h-9 w-6 cursor-pointer rounded-sm transition-all duration-150 ease-out hover:text-orange-200 hover:opacity-80 active:scale-125 lg:w-9 lg:p-1;
   }
+
+  .voteButtons {
+    @apply h-6 w-6 rounded-md p-1 hover:bg-gray-200;
+  }
+
+  .postButtons {
+    @apply flex cursor-pointer items-center space-x-1 rounded-sm p-2 text-sm font-semibold hover:bg-gray-100;
+  }
 }
