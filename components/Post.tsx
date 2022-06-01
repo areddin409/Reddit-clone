@@ -66,7 +66,7 @@ function Post({ post }: Props) {
       0
     )
 
-    if (votes.length === 0) return 0
+    if (votes?.length === 0) return 0
 
     if (displayNumber === 0) {
       return votes[0]?.upvote ? 1 : -1
@@ -114,7 +114,7 @@ function Post({ post }: Props) {
           />
         </div>
 
-        <div className="w-full p-3 pb-1">
+        <div className="p-3 pb-1">
           {/* Header */}
           <div className="flex items-center space-x-2">
             <Avatar seed={post.subreddit[0].topic} />
